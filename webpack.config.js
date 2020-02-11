@@ -65,8 +65,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       template:'template.ejs',
       appMountId: 'react-app-root',
-      title: 'React Help Queue',
-      filename: resolve(__dirname, "build", "index.html"),
+      title: 'Farmers Market',
+      filename: resolve(__dirname, "build", "index.html")
     }),
   ]
 };
