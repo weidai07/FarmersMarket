@@ -11,7 +11,9 @@ function App(){
     backgroundImage: 'url(' + Background + ')',
     backgroundPosition: 'fixed',
     backgroundSize: 'cover',
-    backgroundRepeat: 'repeat'
+    backgroundRepeat: 'repeat',
+    minHeight: '100vh',
+    minWidth: '100%'
   };
   return (
     <div style={style}>
