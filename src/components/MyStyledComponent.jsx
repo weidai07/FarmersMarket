@@ -1,6 +1,6 @@
 import React from 'react';
 
-function MyStyledComponent(props) {
+function MyStyledComponent() {
   return (
     <div>
       <h1>This is a Farmer's Market</h1>
