@@ -1,15 +1,22 @@
-// import Background from '../assets/images/background.jpg';
-// import React from 'react';
+import Background from '../assets/images/background.jpg';
+import React from 'react';
 
-// function BackgroundImage(){
-// //   var style = {
-// //     backgroundSize: 'cover'
-// //   };
-//   return(
-//     <div styles={{ backgroundImage:`url(${Background})` }}>
-//       <img src={Background} alt="Background image"/>
-//     </div>
-//   );
-// }
+function BackgroundImage(){
+  var style = {
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'repeat',
+  };
+  return(
+    <div>
+      <img style={style} src={Background} alt="Background image"/>
+    </div>
+  );
+}
 
-// export default BackgroundImage;
+export default BackgroundImage;
+
+
+
+
+// style={{ backgroundImage:`url(${Background})` }}

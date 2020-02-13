@@ -9,19 +9,21 @@ import Background from '../assets/images/background.jpg';
 function App(){
   var style = {  
     backgroundImage: 'url(' + Background + ')',
-    backgroundPosition: 'center',
+    backgroundPosition: 'fixed',
     backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat'
+    backgroundRepeat: 'repeat'
   };
   return (
     <div style={style}>
-      {/* <BackgroundImage/> */}
-      <Header/>
-      <Switch>
-        <Route exact path='/' component={MarketScheduleList} />
-        <Route path='/newmarketscheduleform' component={NewMarketScheduleForm} />
-        <Route component={Error404} />
-      </Switch>
+      <div>
+        {/* <BackgroundImage/> */}
+        <Header/>
+        <Switch>
+          <Route exact path='/' component={MarketScheduleList} />
+          <Route path='/newmarketscheduleform' component={NewMarketScheduleForm} />
+          <Route component={Error404} />
+        </Switch>
+      </div>
     </div>
   );
 }

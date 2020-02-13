@@ -9,7 +9,7 @@ function Header(){
   return (
     <div>
       <h1 style={style}>Farmer's Market</h1>
-      <Link to="/">Home</Link> | <Link to="/newmarketscheduleform">Create Ticket</Link>
+      <Link to="/">Home</Link> | <Link to="/newmarketscheduleform">Create Ticket</Link> | <Link to="/newmarketscheduleform">Create Ticket</Link>
     </div>
   );
 }
