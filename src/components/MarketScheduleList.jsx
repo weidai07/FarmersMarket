@@ -1,5 +1,6 @@
 import React from 'react';
 import MarketSchedule from './MarketSchedule';
+import Grid from '@material-ui/core/Grid';
 
 var masterMarketScheduleList = [  
   {  
@@ -43,15 +44,17 @@ var masterMarketScheduleList = [
 function MarketScheduleList() {
   return (
     <div>
-      <hr />
-      {masterMarketScheduleList.map((marketSchedule, index) => 
-        <MarketSchedule day={marketSchedule.day}
-          location={marketSchedule.location}
-          hours={marketSchedule.hours}
-          booth = {marketSchedule.booth}
-          key = {index}/>
-            
-      )}
+      <Grid container spacing={2}>
+        {masterMarketScheduleList.map((marketSchedule, index) => 
+          <Grid item xs={6}>
+            <MarketSchedule day={marketSchedule.day}
+              location={marketSchedule.location}
+              hours={marketSchedule.hours}
+              booth = {marketSchedule.booth}
+              key = {index}/>
+          </Grid>
+        )}
+      </Grid>
     </div>
   );
 }
